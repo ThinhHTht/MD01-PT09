@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin: auto;
+        padding-top: 10px;
+        width: 70%;
+        height: 600px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1px;
+        color: white;
+        grid-template-areas:
+          "header header"
+          "header header"
+          "content1 content3"
+          "content1 content4"
+          "content1 content5"
+          "content2 content5";
+      }
+      .Title {
+        grid-area: header;
+        background-image: url(https://i.pinimg.com/236x/47/84/90/478490fc6689759d8f0393e31a8cf3c2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .content1 {
+        grid-area: content1;
+        background-image: url(https://i.pinimg.com/236x/af/5f/fb/af5ffb1b6d11c290ec5781584ee477d4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 10px;
+        padding-top: 240px;
+      }
+      .content2 {
+        grid-area: content2;
+        background-image: url(https://i.pinimg.com/236x/50/4b/91/504b918b4d12143e27376c18c46e91c7.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 10px;
+        padding-top: 30px;
+      }
+      .content3 {
+        grid-area: content3;
+        background-image: url(https://i.pinimg.com/236x/91/07/90/910790c382dde53bf8c402acd951f393.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .content4 {
+        grid-area: content4;
+        background-image: url(https://i.pinimg.com/236x/09/bd/df/09bddf1f13b9bf02b5c3b522cd6097e3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .content5 {
+        grid-area: content5;
+        background-color: brown;
+        padding-left: 10px;
+        padding-top: 30px;
+      }
+      button {
+        width: 350px;
+        height: 30px;
+        margin: 100px 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="Title">
+        <h3>We like balloons</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+          quis!
+        </p>
+      </div>
+      <div class="content1">
+        <h3>Special shapes</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="content2">
+        <h3>10 things you discover when taking a balloon ride.</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="content3">
+        <h3>Angry people at baloon fiestas</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      </div>
+      <div class="content4">
+        <h3>Balloon photos</h3>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="content5">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Sign me up!</button>
+      </div>
+    </div>
+  </body>
+</html>

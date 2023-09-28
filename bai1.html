@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        height: 150px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 10px;
+      }
+      .header {
+        background-color: blue;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 10px;
+      }
+      .New-task {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 10px;
+        position: relative;
+      }
+      .share-task {
+        background-color: rgb(248, 246, 246);
+        height: 50px;
+        padding: 15px 10px;
+      }
+      .footer {
+        background-color: grey;
+        height: 50px;
+        text-align: center;
+        padding: 15px 10px;
+      }
+      .input {
+        border: none;
+        width: 900px;
+        border-bottom: 1px solid rgb(193, 190, 190);
+      }
+      .New-task button {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h4>Task list</h4>
+        <button>Share</button>
+      </div>
+      <div class="New-task">
+        <p>New task</p>
+        <span> <input class="input" /></span>
+        <button>Add task</button>
+      </div>
+      <div class="share-task">
+        <p>Share task list</p>
+      </div>
+      <div class="footer">
+        <p>2023 Task list app</p>
+      </div>
+    </div>
+  </body>
+</html>

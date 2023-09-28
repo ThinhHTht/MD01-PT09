@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 20px;
+        /* width: 70%; */
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      .header {
+        background-color: black;
+        color: white;
+        height: 50px;
+        padding: 15px;
+      }
+      .Nav-bar {
+        background-color: aliceblue;
+        height: 40px;
+        padding: 10px 350px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .introduce {
+        position: relative;
+        height: 200px;
+        /* padding: 40px; */
+      }
+      .introduce p {
+        padding: 20px;
+      }
+      .introduce button {
+        padding: 5px 10px;
+      }
+      .welcome {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-decoration: center;
+      }
+      .list-project {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      h3 {
+        padding-top: 40px;
+        padding-bottom: 15px;
+      }
+      .center {
+        text-align: justify;
+        padding-bottom: 50px;
+      }
+      .footer {
+        background-color: black;
+        height: 35px;
+        color: white;
+        padding: 8px;
+      }
+      @media screen and (max-width: 420px) {
+        .list-project {
+          display: flex;
+          align-items: center;
+          flex-wrap: nowrap;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Portfolio Website</h3>
+      </div>
+      <div class="Nav-bar">
+        <p>Home</p>
+        <p>About</p>
+        <p>Portfolio</p>
+        <p>Contact</p>
+      </div>
+      <!-- <div class="introduce">
+        <h2>Welcome to my porfolio website</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit
+          dignissimos porro ipsam ex, pariatur ratione numquam
+        </p>
+        <button>View Porfolio</button>
+      </div> -->
+      <div class="introduce">
+        <div class="welcome">
+          <h2>Welcome to my porfolio website</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odit
+            dignissimos porro ipsam ex, pariatur ratione numquam
+          </p>
+          <button>View Porfolio</button>
+        </div>
+      </div>
+      <div>
+        <h3>Featured work</h3>
+        <div class="list-project">
+          <div>
+            <img
+              src="https://i.pinimg.com/236x/2e/06/43/2e064334a59c997ced775eda08886c0a.jpg"
+              alt=""
+            />
+            <p>Project 1</p>
+          </div>
+          <div>
+            <img
+              src="https://i.pinimg.com/236x/2e/06/43/2e064334a59c997ced775eda08886c0a.jpg"
+              alt=""
+            />
+            <p>Project 2</p>
+          </div>
+          <div>
+            <img
+              src="https://i.pinimg.com/236x/2e/06/43/2e064334a59c997ced775eda08886c0a.jpg"
+              alt=""
+            />
+            <p>Project 3</p>
+          </div>
+          <div>
+            <img
+              src="https://i.pinimg.com/236x/2e/06/43/2e064334a59c997ced775eda08886c0a.jpg"
+              alt=""
+            />
+            <p>Project 4</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3>About me</h3>
+        <p class="center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quis officiis et a alias quasi, consequuntur aspernatur, quo
+          perferendis voluptas unde, aperiam sequi molestiae modi eveniet quidem
+          exercitationem natus inventore?
+        </p>
+      </div>
+      <div class="footer">
+        <p>© 2023 Porfolio website</p>
+      </div>
+    </div>
+  </body>
+</html>
