@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage product</title>
+    <link rel="stylesheet" href="../CSS/Add product.css">
+    <link rel="shortcut icon" href="../Image/favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="admin-ava">
+                <img class="avatar" src="../Image/avatar.jpg" alt="">
+                <span>Admin.name</span>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <div class="company-logo">
+                <img class="logo" src="/User/Image/Homepage/logo1.png" alt="">
+                <h3>Bat Trang Ceramics</h3>
+            </div>
+
+            <ul class="menu">
+                <li> <a href="./Manage user.html">Manage user</a></li>
+                <li class="active-menu"> <a href="./Manage product.html">Manage product</a></li>
+            </ul>
+        </div>
+        <!-- Content  -->
+        <div class="add-product">
+            <h2>Create new product</h2>
+            <form id="main-form">
+                <label>
+                    <h4>Product name</h4>
+                </label>
+
+                <input id="input-name" class="normal-input" type="text" placeholder="Enter product name">
+
+                <label>
+                    <h4>Image</h4>
+                </label>
+                <!-- <div class="drag-area"> -->
+                <label for="input-file" id="drop-area">
+                    <input type="file" accept="image/*" id="input-file" hidden>
+                    <div id="img-view">
+                        <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
+                        <p>Drag and drop or click here <br> to upload image</p>
+                        <span>Upload from desktop</span>
+                    </div>
+                </label>
+                <!-- </div> -->
+                <label>
+                    <h4>Price</h4>
+                </label>
+
+                <input id="price-input" class="normal-input" type="text" placeholder="Enter price in VND">
+                <br>
+                <div class="two-btn">
+                    <button>Cancel</button>
+                    <button id="add-btn" type="submit">Add</button>
+                </div>
+
+            </form>
+        </div>
+        <script src="../JS/Add product.js"></script>
+</body>
+
+</html>
