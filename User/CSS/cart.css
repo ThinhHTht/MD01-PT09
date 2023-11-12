@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: "system-ui";
+    /* background-color: aquamarine; */
+    
+}
+
+.logo-img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+.search-bar {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(0, 90, 60);
+    /* background-image: linear-gradient(to right, rgb(61, 249, 186), bullets ); */
+    position: fixed;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(77,121,9,1) 100%, rgba(0,212,255,1) 100%);
+}
+/* .linear {
+  height: 90px;
+    background-image: linear-gradient(to right, rgb(11, 131, 91),rgb(63, 255, 197)  );
+    z-index: 999;
+} */
+
+
+input {
+    position: relative;
+    margin-left: 120px;
+    width: 350px;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-btn {
+    position: absolute;
+    margin-left: 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: hsl(53.06deg 81.22% 64.51%);
+}
+.email {
+    padding-left: 150px;
+    color: white;
+}
+.phone {
+    padding-left: 50px;
+    color: white;
+}
+.shopping {
+    margin-left: 100px;
+    position: relative;
+    /* text-align: right; */
+  }
+.shopping i {
+    color: white;
+    font-size: larger;
+    
+  }
+.shopping span {
+    background: hsl(53.06deg 81.22% 64.51%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    top: -15px;
+    left: 80%;
+    padding: 2px 8px;
+  }
+/* 
+  // Gio hang  */
+
+  .card {
+    font-family: "system-ui";
+    position:fixed;
+    top: 100px;
+    margin-left: 70px;
+    width: 90%;
+    background-color: rgb(248, 248, 248);
+    /* height: 72%; */
+    transition: 0.5s;
+    /* overflow-y: scroll; */
+    
+
+  }
+  .card h1 {
+    color: rgba(0, 56, 17, 0.811);
+    font-weight: 400px;
+    padding-top: 10px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+  }
+  .card .checkOut {
+    position: fixed;
+    top: 530px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+  }
+  .card .checkOut div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 4px;
+    border: none;
+    font-size: larger;
+    padding-top: 15px;
+    
+
+  }
+  .total-btn{
+    background-color: #e8bc0e;
+    height: 60px;
+
+   
+  
+  }
+  .closeShopping {
+    background-color: rgb(53, 87, 2);
+    color: rgba(255, 255, 255, 0.811);
+ 
+  
+  }
+  .listCard{
+    overflow-y: scroll;
+    height: 350px;
+  }
+ 
+  .listCard li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border: 0.5px solid rgb(2, 144, 56) ;
+    border-radius: 5px;
+
+  }
+  .id-cart{
+    width: 100px;
+    text-align: center;
+  }
+  .img-cart{
+    width: 170px;
+    height: 130px;
+  }
+  .name-cart{
+    width: 450px;
+    padding-left: 30px;
+  }
+  .price-cart{
+    width: 150px;
+    padding-left: 30px;
+  }
+  /* .listCard li :nth-child(1){
+  width: 80px;
+  text-align: center;
+  }
+
+  .listCard li:nth-child(2){
+    width: 170px;
+    height: 130px;
+    border-radius: 5px;
+  } 
+  .listCard li :nth-child(3){
+    width: 450px;
+    margin-left:  50px;
+  } 
+  .listCard li :nth-child(4){
+    width: 70px;
+    margin-left: 20px;
+  } 
+    .listCard li :nth-child(5){
+    width: 70px;
+    margin-left: 20px;
+  }  */
+
+.updateQuantity {
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 5px;
+    width: 200px;
+    /* background-color: blue; */
+
+  }
+  .listCard .count {
+    color: black !important;    
+
+  }
+
+.updateQuantity button {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(179, 174, 174);
+    border: none;
+    border-radius: 2px;
+}  
+/* 
+  .listCard li:nth-child(even) {
+    background: rgb(176, 233, 242);
+   }
+   .listCard li:nth-child(odd) {
+       background: aliceblue;
+      } */
+
